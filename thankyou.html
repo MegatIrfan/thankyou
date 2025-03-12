@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Success</title>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Manrope', sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f8f9fa;
+      padding: 20px;
+      position: relative;
+    }
+    
+    .animation-container {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 10px;
+    }
+    
+    .text {
+      font-size: 30px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    
+    .subtext {
+      font-size: 16px;
+      font-weight: 500;
+      color: #666;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+    
+    .home-button {
+      padding: 12px 32px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .home-button:hover {
+      background-color: #242424;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .watermark {
+      justify-items: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+    
+    .watermark a {
+      color: #555;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    
+    .watermark a:hover {
+      color: #333;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="animation-container">
+      <dotlottie-player 
+        src="https://lottie.host/c400d295-b995-4abc-953f-4210639de90d/Wdu1Nva2UE.lottie" 
+        background="transparent" 
+        speed="1" 
+        style="width: 300px; height: 300px" 
+        loop 
+        autoplay>
+      </dotlottie-player>
+    </div>
+    <div class="text">Thank You For Your Payment!</div>
+    <div class="subtext">Your transaction has been completed successfully. A confirmation email has been sent to your registered email address.</div>
+    <button class="home-button">Home Page</button>
+    
+    <div class="watermark">
+      Coding by <a href="https://megatirfan.com" target="_blank">Megat Irfan</a>
+    </div>
+  </div>
+</body>
+</html>
